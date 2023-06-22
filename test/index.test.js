@@ -1,10 +1,11 @@
 const request = require("request");
+const expect = require("chai").expect;
 
-describe('App Api Tests', () => {
+describe('Test 1', () => {
     let url = "http://localhost:3001/"
 
     describe('GET /', () => {
-        it('Should return a successful Hello World! HTTP GET', (done) => {
+        it('Returns content and 200 OK', (done) => {
             request(url, function (err, response) {
                 expect(response.body).to.contain("Hello World!");
                 expect(response.statusCode).to.equal(200);
