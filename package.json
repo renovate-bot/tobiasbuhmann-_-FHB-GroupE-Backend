@@ -6,17 +6,26 @@
   "scripts": {
     "start": "node src/index.js",
     "dev": "nodemon src/index.js",
-    "test": "mocha --exit"
+    "build": "node src/index.js",
+    "test": "mocha --exit",
+    "lint": "eslint src/index.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "chai": "^4.3.7",
     "express": "^4.17.3",
-    "request": "^2.88.2",
-    "chai": "^4.3.7"
+    "request": "^2.88.2"
   },
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.60.0",
+    "eslint": "^8.43.0",
+    "eslint-config-standard-with-typescript": "^35.0.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-n": "^15.7.0",
+    "eslint-plugin-promise": "^6.1.1",
+    "mocha": "^10.2.0",
     "nodemon": "^2.0.15",
-    "mocha": "^10.2.0"
+    "typescript": "^5.1.3"
   }
 }
